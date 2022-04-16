@@ -64,7 +64,8 @@ img {
 .header {
   display: flex;
   width: 100%;
-  border-bottom: 1px solid var(--primary-text-color);
+
+  border-bottom: 1px solid #ececec;
   margin: 0;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -155,16 +156,6 @@ img {
   position: relative;
 }
 
-.current::after {
-  content: '';
-  width: 100%;
-  height: 2px;
-  background-color: var(--accent-color);
-  display: block;
-  position: absolute;
-  border: -40px;
-}
-
 /* !!! Герой !!! */
 
 .container-hero {
@@ -211,8 +202,6 @@ img {
 /* Наші переваги */ /* Сфера надання послуг компанії */
 /* Команда компанії */
 
-.advantage-title,
-.service-title,
 .staff-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -222,10 +211,13 @@ img {
 
   padding-top: 0;
   padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .container-advantage {
   padding-top: 94px;
+  padding-bottom: 47px;
   margin: 0;
 }
 
@@ -233,9 +225,8 @@ img {
 
 .advantage-list {
   display: flex;
-  margin-bottom: 94px;
-  margin-top: 50px;
-  padding: 0px;
+  padding-top: 0;
+  padding-bottom: 47px;
   max-width: 1170px;
   justify-content: baseline;
 }
@@ -262,6 +253,7 @@ img {
 
   align-items: center;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .advantage-list .advantage-list-text {
@@ -270,20 +262,17 @@ img {
   line-height: 1.71;
 
   margin-top: 0px;
+  margin-bottom: 0;
 }
 
 .container-service {
   padding-bottom: 94px;
-  padding-top: 0;
-  margin: 0;
+  padding-top: 47px;
 }
 
 .service-list {
   display: flex;
-  padding: 0px;
   max-width: 1170px;
-  margin-top: 50px;
-  padding-top: 0;
   padding-bottom: 0;
   justify-content: center;
   align-items: center;
@@ -316,8 +305,6 @@ img {
 }
 
 .staff-image {
-  padding-top: 0px;
-  padding-bottom: 0px;
   max-width: 270px;
   max-height: 260px;
 }
@@ -325,9 +312,11 @@ img {
 .staff-list {
   display: flex;
   max-width: 1170px;
+
   padding-top: 0;
-  padding-bottom: 30px;
+  padding-bottom: 0;
   margin-top: 50px;
+  margin-bottom: 0;
 }
 
 .staff-list .staff-list-item {
@@ -433,27 +422,13 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.buttons-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-
-  padding: 0;
-  margin: 0px 0px 50px;
-}
-
 .buttons-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
 
   padding: 0px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 50px;
+  margin: 0px 0px 50px 0px;
 
   list-style: none;
 }
@@ -468,15 +443,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding-top: 0;
-  padding-bottom: 20px;
-  margin: 0;
+  padding-bottom: 0px;
+  margin: 0 auto;
 }
 
 .spectrum-list .spectrum-list-item {
   max-width: 370px;
-  max-height: 404px;
   margin-right: 30px;
-  padding-bottom: 30px;
 
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -492,9 +465,10 @@ img {
 }
 
 .container-spectrum-title-text {
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-bottom: 0px;
+  margin: 0px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
 
 .spectrum-list .spectrum-title {
